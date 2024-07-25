@@ -22,7 +22,7 @@ const TaskItem = ({ index, task, editTask, deleteTask }) => {
                     type="text"
                     value={newTask}
                     onChange={handleChange}
-                    className="flex-grow p-2 border border-gray-300 rounded"
+                    className="w-10 flex-grow p-2 border border-gray-300 rounded"
                 />
             ) : (
                 <span>{task}</span>
