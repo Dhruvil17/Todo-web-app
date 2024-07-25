@@ -22,10 +22,12 @@ const TaskItem = ({ index, task, editTask, deleteTask }) => {
                     type="text"
                     value={newTask}
                     onChange={handleChange}
-                    className="flex-grow p-2 border border-gray-300 dark:border-gray-700 rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-500"
+                    className="w-2 flex-grow p-2 border border-gray-300 dark:border-gray-700 rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-500"
                 />
             ) : (
-                <span>{task}</span>
+                <span className="break-words overflow-hidden mr-[2%]">
+                    {task}
+                </span>
             )}
             <div className="flex space-x-2">
                 <button
