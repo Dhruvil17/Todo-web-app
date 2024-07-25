@@ -2,13 +2,14 @@
 
 ## Overview
 
-This is a simple to-do list application built with React and styled with Tailwind CSS. It allows users to add, edit, and delete tasks.
+This is a simple to-do list application built with React and styled with Tailwind CSS. It allows users to add, edit, and delete tasks. It also has a light/dark mode toggle feature.
 
 ## Features
 
 -   Add new tasks
 -   Edit existing tasks
 -   Delete tasks
+-   Light and Dark mode
 
 ## Prerequisites
 
