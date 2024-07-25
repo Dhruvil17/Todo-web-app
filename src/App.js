@@ -22,6 +22,10 @@ const App = () => {
         setTasks(newTasks);
     };
 
+    const handleClick = () => {
+        setTasks([]);
+    };
+
     return (
         <div className="py-[5%] bg-gray-100 flex items-start justify-center min-h-screen">
             <div className="bg-white p-6 rounded-xl shadow-lg w-full max-w-md">
@@ -35,6 +39,13 @@ const App = () => {
                     editTask={editTask}
                     deleteTask={deleteTask}
                 />
+                {tasks.length !== 0 && (
+                    <button
+                        onClick={handleClick}
+                        className="bg-red-500 mt-[4%] text-white px-3 py-1 rounded hover:bg-red-700 focus:outline-none">
+                        Delete all Tasks
+                    </button>
+                )}
             </div>
         </div>
     );
